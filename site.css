@@ -16,6 +16,7 @@ h1, h2 {
 	padding: 25px;
 	border-bottom: 10px solid black;
 	font-size: 60px;
+	text-transform: uppercase;
 }
 
 p {
@@ -52,6 +53,7 @@ article {
 
 nav a {
 	color: #F2FFFC;
+	text-transform: lowercase;
 }
 
 main a {
@@ -76,10 +78,30 @@ blockquote, aside, footer {
 aside h1 {
 	font-size: 30px;
 	margin-bottom: 25px;
+	text-transform: uppercase;
 }
 
 .icones-redes-sociais li {
 	display: inline-block;
+}
+
+.icones-redes-sociais a {
+	width: 40px;
+	height: 40px;
+	text-indent: -99999px;
+	display: inline-block;
+}
+
+.github {
+	background-image: url(github.png);
+}
+
+.twitter {
+	background-image: url(twitter.png);
+}
+
+.linkedin {
+	background-image: url(linkedin.png);
 }
 
 strong {

@@ -24,13 +24,7 @@ p {
 	margin: 20px 0;
 }
 
-article {
-	padding-bottom: 30px;
-	border-bottom: 1px solid #ccc;
-	margin-bottom: 20px;
-}
-
-.citacoes {
+.citacao-bio {
 	background-color: #D9E5E3;
 	border: 10px solid #C2CCCA;
 	width: 250px;
@@ -38,71 +32,84 @@ article {
 	margin: 20px 40px;
 }
 
-cite {
-	float: right;
-	font-style: italic;
-}
-
-.citacao-fiat {
-	float: right;
-}
-
-.citacao-petrobras {
-	float: left;
-}
-
 .navegacao-site {
+	text-align: center;
 	background-color: #3C1D3D;
 	color: #F2FFFC;
-	text-align: center;
-	padding: 20px;
 }
 
-#rodape-pagina {
+.rodape-pagina {
 	background-color: #000;
 	color: #F2FFFC;
-	padding: 20px;
-}
-
-nav a {
-	color: #F2FFFC;
-	text-transform: lowercase;
+	clear: both;
 }
 
 main a {
 	color: #851944;
 }
 
-aside a {
+.navegacao-site a {
 	color: inherit;
 	font-family: "Open Sans Condensed", sans-serif;
 }
 
-blockquote, aside, footer {
+.citacao-bio, .navegacao-site, .rodape-pagina {
     padding: 20px;
 }
 
-.container{
+.container {
 	width: 720px;
 	margin: auto;
 	padding: 30px 0;
+	padding-bottom: 80px;
 }
 
-aside h1 {
+.navegacao-site h1 {
 	font-size: 30px;
 	margin-bottom: 25px;
-	text-transform: uppercase;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+.subtitulo-texto {
+	font-size: 30px;
+	clear: both;
 }
 
 .icones-redes-sociais li {
 	display: inline-block;
 }
 
+.artigo {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+.leia-mais {
+	padding: 8px;
+	margin: 16px;
+	display: block;
+	font-size: 24px;
+	text-align: center;
+	background-color: #E6E7E8;
+}
+
+nav a {
+	text-transform: lowercase;
+}
+
 .icones-redes-sociais a {
 	width: 40px;
 	height: 40px;
+	display: block;
 	text-indent: -99999px;
-	display: inline-block;
 }
 
 .github {
@@ -117,38 +124,12 @@ aside h1 {
 	background-image: url(linkedin.png);
 }
 
-strong {
-	font-weight: bold;
-}
-
-em {
-	font-style: italic;
-}
-
-h2 {
-	font-size: 30px;
-}
-
-.subtitulo-texto {
-	clear: both;
-}
-
-.leia-mais {
-	font-size: 24px;
-	padding: 8x;
-	margin: 16px;
-	display: block;
-	text-align: center;
-	background-color: #E6E7E8;	
-}
-
-.foto-pessoal, .navegacao-site {
+.fiat {
 	float: right;
-	width: 15%;
-	box-sizing: border-box;
-	border-left: 10px solid black;
-	border-left: 10px solid black;
-    border-bottom: 10px solid black;
+}
+
+.petrobras {
+	float: left;
 }
 
 main {
@@ -156,6 +137,32 @@ main {
 	width: 85%;
 }
 
-footer {
-	clear: both;
+.minha-foto, .navegacao-site {
+	float: right;
+	box-sizing: border-box;
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.navegacao-site {
+	position: relative;
+	top: 310px;
+	right: 0;
+	clear: right;
+	width: 15%;
+}
+
+cite {
+	font-style: italic;
+	float: right;
+}
+
+.rodape-pagina {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
 }
